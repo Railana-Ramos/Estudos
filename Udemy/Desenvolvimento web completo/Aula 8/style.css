@@ -1,0 +1,12 @@
+
+/* https://www.w3schools.com/css/css_border.asp */
+#conteudo{
+    /* border: 1px solid black; */
+    border-width: 15px 10px;
+    border-style: double dotted;
+    border-color: red green;
+}
+
+/* Duas formas de escrever a borda: */
+/* 1. border-width, border-style, border-color, entre outros (mantem melhor manejo do codigo) */
+/* 2. border: 15px double red green; (mais simples, porém funciona de forma parecida */
