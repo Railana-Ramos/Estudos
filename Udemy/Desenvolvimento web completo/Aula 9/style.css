@@ -1,0 +1,11 @@
+
+/* Uma fonte do google, utilizei o html para links, e aqui o codigo da font, fonte utilizada do google fonts */
+
+.conteudo {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 20px;
+  /* font-size: 20px; */
+  font-style: normal;
+  color: rgb(165, 124, 241);
+}
