@@ -5,7 +5,45 @@
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 20px;
-  /* font-size: 20px; */
   font-style: normal;
   color: rgb(165, 124, 241);
+}
+
+/* Tamanhos de fontes */
+/* fonte padrão do navegador é 16px, ou seja, se não for especificado um tamanho de fonte, o navegador irá utilizar o tamanho de fonte padrão, que é 16px. */
+
+/* px = valor fixo, não é recomendado, pois não é responsivo, ou seja, não se adapta a diferentes tamanhos de tela. */
+
+/* % = valor relativo, é recomendado, pois é responsivo, ou seja, se adapta a diferentes tamanhos de tela. o % é relativo ao tamanho da fonte do elemento pai. 
+Se o elemento pai tiver um tamanho de fonte de 16px, então 100% será igual a 16px. Se o elemento pai tiver um tamanho de fonte de 20px, então 100% será igual a 20px. 
+O % é útil para criar layouts flexíveis e escaláveis, pois permite que os elementos se ajustem ao tamanho da fonte do elemento pai. O % também é útil para criar hierarquias visuais, pois permite que os elementos tenham tamanhos de fonte relativos uns aos outros. */
+
+/* em = valor relativo, é recomendado, pois é responsivo, ou seja, se adapta a diferentes tamanhos de tela.
+o em é relativo ao tamanho da fonte do elemento pai. Se o elemento pai tiver um tamanho de fonte de 16px, 
+então 1em será igual a 16px. Se o elemento pai tiver um tamanho de fonte de 20px, então 1em será igual a 20px. 
+O em é útil para criar layouts flexíveis e escaláveis, pois permite que os elementos se ajustem ao tamanho da fonte do elemento pai.
+O em também é útil para criar hierarquias visuais, pois permite que os elementos tenham tamanhos de fonte relativos uns aos outros.
+
+/* rem = valor relativo, é recomendado, pois é responsivo, ou seja, se adapta a diferentes tamanhos de tela. 
+O rem é relativo ao tamanho da fonte raiz (geralmente o tamanho da fonte do elemento <html>). */
+
+
+.tamanho-fonte {
+  /* font-size: 64px; */
+    font-size: 2em;
+}
+
+/* O pai seria a div, e o filho seria a classe .tamanho-fonte, ou seja, o tamanho da fonte da classe .tamanho-fonte é relativo ao tamanho da fonte da div. 
+Se a div tiver um tamanho de fonte de 16px, então 2em será igual a 32px. Se a div tiver um tamanho de fonte de 20px, então 2em será igual a 40px. */
+
+div {
+  /* font-size: 16px; */
+    font-size: 32px;
+}
+
+/* text-decoration é uma propriedade CSS que permite adicionar efeitos de decoração ao texto, como sublinhado, linha sobre o texto, linha através do texto, etc. */
+/* text-decoration: line-through; é um valor das propriedades text-decoration */
+
+.formatacao{
+    text-decoration: line-through;
 }
