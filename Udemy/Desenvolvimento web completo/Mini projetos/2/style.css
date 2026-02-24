@@ -1,0 +1,55 @@
+.background {
+    background: url(img/fundo.png);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 20px;
+    font-style: normal;
+    color: rgb(165, 164, 164);
+}
+.menu{
+    font-size: 24px;
+    list-style: none;
+    padding: 20px 0px 20px 10px;
+    width: 890px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    background-color: rgba(189, 181, 181, 0.685);
+}
+.menu a {
+  color: rgb(94, 94, 94);
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: yellow;
+}
+
+.menu a:active {
+  color: orange;
+}
+.tamanho {
+  width: 890px;
+}
+.container {
+    background-color: white;
+    padding: 20px;
+    width: 860px;
+    
+}
+.container p {
+    color: rgb(0, 0, 0);
+}
+
+.container img {
+    margin: 10px 0px 0px 0px;
+    border: 10px solid rgb(190, 190, 190);
+}
+
+.footer {
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
