@@ -1,0 +1,141 @@
+
+/* Formatações */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 1em;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: #e6e6e6;
+}
+
+/* Colors */
+
+.color1 {
+    color: #fff;
+    background-color: #000;
+}
+.color2 {
+    color: #f7b600;
+}
+.color3 {
+    color: #e6e6e6;
+
+}
+.color4 {
+    color: #777677;
+}
+
+/* Header */
+
+.header {
+    background-color: #f7b600;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.header h1 {
+    color: #fff;
+    font-size: 2.5em;
+    margin: 10px;
+}
+.header h1 span {
+    color: #000;
+}
+
+.header a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 8px ;
+}
+.header a:hover {
+    color: #f7b600;
+    background-color: #fff;
+}   
+
+/* Sections */
+.main {
+    width: 920px;
+    padding: 15px 0px;
+    margin: 0 auto;
+}
+
+.artigo {
+    margin-bottom: 10px;
+    
+    border-radius: 5px;
+    width: 660px;
+    float: left;
+}
+.artigo span {
+    font-size: 0.8em;
+    display: block;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f4f4f4;
+}
+.artigo-item {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.artigo img {
+    width: 620px;
+    height: auto;
+    margin: 10px 0px;
+}
+.artigo a {
+    text-decoration: none;
+    color: #f7b600;
+}
+.artigo a:hover,.lateral-item a:hover{
+    text-decoration: underline;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/* Lateral */
+
+.lateral {
+    float: right;
+    width: 240px;
+    border-radius: 5px;
+}
+
+.lateral-item {
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 0.8em;
+    margin-bottom: 20px;
+    display: block;
+    
+}
+.lateral-item a {
+    display: block;
+    text-decoration: none;
+    color: #f7b600;
+}
+.lateral-item h3 {
+    margin-bottom: 10px;
+    background-color: #e0e0e0;
+    padding: 10px;
+}
+
+
+/* flooder */
+
+.footer {
+    background-color: #f7b600;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
