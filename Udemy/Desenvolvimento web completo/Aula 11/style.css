@@ -1,0 +1,61 @@
+/* Float  */
+/* o Float é uma propriedade CSS que permite que um elemento seja retirado do fluxo normal do documento e posicionado à esquerda ou à direita de seu contêiner pai.
+Isso é útil para criar layouts onde os elementos precisam ser alinhados lado a lado. */
+
+
+.container {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    background-color: aquamarine;
+    float: right;
+}
+
+/* Clear serve para limpar o float, ou seja, para garantir que os elementos seguintes sejam posicionados corretamente abaixo dos elementos flutuantes,
+em vez de ao lado deles. */
+
+.clear {
+    clear: both;
+}
+
+/* Display é uma propriedade CSS que controla como um elemento é exibido na página. O valor "block" faz com que o elemento seja exibido como um bloco, 
+ocupando toda a largura disponível e iniciando em uma nova linha. Isso é útil para garantir que os elementos sejam empilhados verticalmente, em vez de lado a lado 
+como seria no inline, ou inline block. */
+
+.display {
+    display: block;
+}
+
+.container2 {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    background-color: aquamarine;
+    float: left;
+}
+
+/* Position é uma propriedade CSS que controla o posicionamento de um elemento na página. 
+O valor "relative" faz com que o elemento seja posicionado em relação à sua posição normal no fluxo do documento.
+O valor "absolute" faz com que o elemento seja posicionado em relação ao seu contêiner pai mais próximo que tenha uma posição definida (relative, absolute ou fixed).
+O valor "fixed" faz com que o elemento seja posicionado em relação à janela do navegador, permanecendo fixo mesmo quando a página é rolada. 
+O valor "sticky" faz com que o elemento seja posicionado de forma relativa até atingir um ponto específico na rolagem, onde ele se torna fixo.
+O valor "static" é o valor padrão, onde o elemento é posicionado de acordo com o fluxo normal do documento. */
+
+.container2 p {
+    position: relative;
+    /* top: 30px; */
+    /* right: 30px; */
+    left: 30px;
+}
+
+/* O z-index é uma propriedade CSS que controla a ordem de empilhamento dos elementos posicionados. 
+Elementos com um valor de z-index mais alto serão exibidos na frente de elementos com um valor de z-index mais baixo.
+O z-index só funciona em elementos que têm uma posição definida como relative, absolute, fixed ou sticky. */
+
+.container3 {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    background-color: aquamarine;
+    float: right;
+}
