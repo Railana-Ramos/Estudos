@@ -1,0 +1,68 @@
+/* Seletor universal - *  */
+/* Aqui usei o seletor para resetar as margens, os preenchimentos e o box-sizing de todos os elementos da página. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Seletores de classe  */
+/* Aqui usei o seletor de classe para estilizar o container da página. */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #000000;
+}
+
+/* Serve para estilizar os parágrafos dentro do container, mas apenas os parágrafos que são filhos diretos do container. */ 
+/* Nesse codigo nada vai acontecer pois o minha classe está em uma div, e não no elemento p, ou seja, o seletor de filho direto não vai funcionar. */
+p.container {
+    color: #2500fa;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Seletor de descendente  */
+/* Aqui usei o seletor de descendente para estilizar os parágrafos dentro do container, independentemente de sua posição na hierarquia. */
+
+.container p {
+    color: #ec0707;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+
+/* # Seletor de ID  */
+/* # Aqui usei o seletor de ID para estilizar um elemento específico com o ID "id". */
+
+#exemplo-id {
+    color: #0000ff;
+    font-size: 20px;
+    border: 1px solid #0000ff;
+}
+
+/* Seletor de um filho específico  */
+/* Aqui usei o seletor de um filho específico para estilizar o segundo parágrafo dentro do filho. */
+/* Seleciona quaisquer elementos <a> que são filhos de um elemento <li> (mas não outros elementos <a> na página) */
+
+.exemplo-filho li > a {
+    color: #00ff00;
+    font-size: 16px;
+}
+
+/* Seletor de irmão adjacente */
+/* Aqui usei o seletor de irmão adjacente para estilizar o parágrafo que vem imediatamente após um elemento <h2>. */
+
+h2 + p {
+    color: #eeff00;
+    font-size: 16px;
+}
+
+/* Seletor irmão geral */
+/* Aqui usei o seletor de irmão geral para estilizar todos os parágrafos que vêm após um elemento <h1>. */
+
+h1 ~ p {
+    color: #ff00ff;
+    font-size: 16px;
+}
