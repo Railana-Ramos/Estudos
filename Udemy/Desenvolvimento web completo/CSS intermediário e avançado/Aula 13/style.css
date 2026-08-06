@@ -1,0 +1,28 @@
+/* Barra de navegação vertical */
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* O text ident serve para criar um espaço entre a borda do elemento e o texto, nesse caso, o texto ficará a 40px da borda esquerda do elemento.
+O line-height é usado para centralizar o texto verticalmente dentro do elemento, nesse caso, o texto ficará centralizado verticalmente dentro do elemento de 40px de altura.
+O background é uma imagem que tem um menu, onde a parte esquerda é o menu normal e a parte direita é o menu quando o mouse estiver sobre ele. 
+O background-position: right; faz com que a parte direita da imagem seja exibida quando o mouse estiver sobre o link. */
+
+.nav-list a {
+    display: block;
+    width: 200px;
+    height: 40px;
+    background: #f7b600 url(img/menu.png) no-repeat left;
+    text-decoration: none;
+    color: #000000;
+    text-indent: 40px;
+    line-height: 40px;
+
+} 
+.nav-list a:hover {
+    background-position: right;
+    color: rgb(255, 255, 255);
+    background-color: #f99200;
+}
