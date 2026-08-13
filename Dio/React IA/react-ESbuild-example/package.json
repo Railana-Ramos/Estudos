@@ -1,0 +1,22 @@
+{
+  "name": "react-babel-esbuild-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node build.js",
+    "build": "esbuild src/index.jsx --bundle --outfile=dist/bundle.js --loader:.js=jsx --bundle --minify",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2"
+  }
+}
