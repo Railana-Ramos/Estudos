@@ -1,39 +1,48 @@
-const {gets, print} = require('./maiorParMenorImparAuxiliar')
+const { gets, print } = require("./maiorParMenorImparAuxiliar");
 
-// let maiorValorEncontradoPar = 0;
-// let menorValorEncontradoImpar = null;
+let maiorValorEncontradoPar = null;
+let menorValorEncontradoImpar = null;
+let numeros = gets();
 
-// for (let i = 0; i < 10 ; i++) {
-//     let numeros = gets();
-    
-//     if (numeros % 2 === 0) {
-//         if (numeros > maiorValorEncontradoPar) {
-//             maiorValorEncontradoPar = numeros;
-//         }
-//     } else {
-//             if (menorValorEncontradoImpar === null || numeros < menorValorEncontradoImpar) {
-//             menorValorEncontradoImpar = numeros;
-//         }
-//         }
-//     }
+while (numeros !==undefined ) {
 
-
-// print (maiorValorEncontradoPar)
-// print (menorValorEncontradoImpar)
-
-
-let maiorPar = 0;
-let menorImpar = null;
-
-for (let i = 0; i < 10; i++) {
-    const numero = gets();
-
-    if (numero % 2 === 0) {
-        maiorPar = Math.max(maiorPar, numero);
-    } else {
-        menorImpar = (menorImpar === null) ? numero : Math.min(menorImpar, numero);
+  if (numeros % 2 === 0) {
+    if (maiorValorEncontradoPar === null || numeros > maiorValorEncontradoPar) {
+      maiorValorEncontradoPar = numeros;
     }
+  } else {
+    if (
+      menorValorEncontradoImpar === null || numeros < menorValorEncontradoImpar) {
+      menorValorEncontradoImpar = numeros;
+    }
+  }
+  numeros = gets();
 }
 
-print(maiorPar);
-print(menorImpar);
+print(maiorValorEncontradoPar);
+print(menorValorEncontradoImpar);
+
+// O que mudou no fluxo:
+// Lemos o primeiro valor (let numeros = gets()) fora do loop.
+// O while verifica: "Esse valor existe? (é diferente de undefined?)". 
+// Se sim, ele entra e faz os testes de par/ímpar.
+// No finalzinho do bloco do while, lemos o próximo número com numeros = gets().
+// Ele volta para o início do while e repete tudo até a lista acabar!
+
+
+
+// let maiorPar = 0;
+// let menorImpar = null;
+
+// for (let i = 0; i < 10; i++) {
+//     const numero = gets();
+
+//     if (numero % 2 === 0) {
+//         maiorPar = Math.max(maiorPar, numero);
+//     } else {
+//         menorImpar = (menorImpar === null) ? numero : Math.min(menorImpar, numero);
+//     }
+// }
+
+// print(maiorPar);
+// print(menorImpar);
